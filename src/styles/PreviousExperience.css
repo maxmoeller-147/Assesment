@@ -1,12 +1,13 @@
 :root {
     background-color: #fff4e9
 }
-:first-child {
-        margin-right: auto; 
-    }
-
 
    nav {
+    :first-child {
+        margin-right: auto; 
+        margin-left: 5px;
+    }
+
     color: white;
     align-items: center;
     border-bottom: solid 2px black ;

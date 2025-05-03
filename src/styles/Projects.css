@@ -1,12 +1,15 @@
 :root {
     background-color: #fff4e9
 }
-:first-child {
-        margin-right: auto; 
-    }
+
 
 
    nav {
+    :first-child {
+        margin-right: auto; 
+        margin-left: 5px;
+    }
+
     color: white;
     align-items: center;
     border-bottom: solid 2px black ;
@@ -32,6 +35,55 @@ body {
     height: 100%;
     margin: 0;
 } 
+
+.BigTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.MainContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2px;
+
+    
+    .MainProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    border: black solid 3px;
+    border-radius: 15px;
+    background-color: white;
+
+    .title {
+        font-size: 30px;
+    }
+    
+    .ProjectPicture1 {
+        width: 30%;
+        background-color: #7CB518;
+        padding:  3px;
+        border: solid black 1px;
+        border-radius: 10px;
+
+    }
+
+    .status {
+        color: #7CB518;
+        margin-top: 10px;
+    }
+
+    .text {
+        margin: 2%;
+    }
+}
+
+}
+
+
 
 footer {
     display: flex;
