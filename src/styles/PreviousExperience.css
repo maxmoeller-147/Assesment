@@ -1,12 +1,40 @@
 :root {
-    background-color: #fff4e9
+    background-color: #fff4e9;
 }
 
-   nav {
-    :first-child {
-        margin-right: auto; 
-        margin-left: 5px;
+    * {
+        margin: 0;
+        padding: 0;
+
     }
+    
+    body {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+
+    html {
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+
+
+.pumpkin img {
+    width: 60px;
+    
+}
+
+.pumpkin img:hover {
+    transform: scale(1.2);
+}
+
+.pumpkin {
+    margin: 0 auto;
+    width:100vw; 
+}
+
+
+   nav {
 
     color: white;
     align-items: center;
@@ -37,11 +65,14 @@ body {
 .BigTitle {
     display: flex;
     justify-content: center;
+    margin-top: 3%;
 }
 
 .content {
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 2%;
+    padding-bottom: 60px 1rem;
 
 
     .job {
@@ -74,6 +105,7 @@ body {
 
     .text {
         margin: 2%;
+        text-align: center;
     }
 }
 
@@ -82,25 +114,16 @@ body {
 
 
 footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: white;
-    position: absolute;
-    right: 0;
+
+    position: fixed;
+    width: inherit;
+    max-width: inherit;
     bottom: 0;
-    left: 0;
+    color: white;
     border-top: solid 2px black;
 	background-color: #EB6424;
-	height: 1.2cm;
 	text-align: center;
 
-    .FooterTitle {
-        margin-left: 4px;
-    }
-    .LinksSocial {
-        margin-right: 5px;
-    }
     .FacebookFooter {
         height: 1cm;
         width: 1cm;
@@ -118,7 +141,43 @@ footer {
     background-color: #7CB518;
 }
 
+@media screen and (max-width: 720px) {
 
+    nav {
+        font-size: 8px;
+        display: flex;
+        justify-content: end;
+        color: white;
+        align-items: center;
+        border-bottom: solid 2px black ;
+        display: flex;
+        justify-content: end;
+        background-color: #EB6424;
+        button {
+            font-size: 10px;
+            border-radius: 0.3cm;
+            height: 0.5cm;
+            width: 1.2cm;
+            align-items: center;
+            background-color: #7CB518;
+        }
+        button:hover {
+            background-color: #fff4e9;
+        } 
+
+       .pumpkin img {
+        width: 45px;}
+ 
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+ 
+}
 
 
 

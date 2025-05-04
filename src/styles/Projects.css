@@ -1,15 +1,38 @@
 :root {
-    background-color: #fff4e9
+    background-color: #fff4e9;
 }
 
+    * {
+        margin: 0;
+        padding: 0;
 
-
-   nav {
-    :first-child {
-        margin-right: auto; 
-        margin-left: 5px;
+    }
+    
+    body {
+        width: 100%;
+        min-height: 100vh;
     }
 
+
+    html {
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    }
+.pumpkin img {
+    width: 60px;
+    
+}
+
+.pumpkin img:hover {
+    transform: scale(1.2);
+}
+
+.pumpkin {
+    margin: 0 auto;
+    width:100vw; 
+}
+
+   nav {
+   
     color: white;
     align-items: center;
     border-bottom: solid 2px black ;
@@ -39,6 +62,7 @@ body {
 .BigTitle {
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .MainContent {
@@ -47,6 +71,8 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2px;
+    text-align: center;
+    padding: 55px 1rem;
 
     
     .MainProject {
@@ -57,6 +83,7 @@ body {
     border: black solid 3px;
     border-radius: 15px;
     background-color: white;
+    
 
     .title {
         font-size: 30px;
@@ -86,25 +113,16 @@ body {
 
 
 footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: white;
-    position: absolute;
-    right: 0;
+
+    position: fixed;
+    width: inherit;
+    max-width: inherit;
     bottom: 0;
-    left: 0;
+    color: white;
     border-top: solid 2px black;
 	background-color: #EB6424;
-	height: 1.2cm;
 	text-align: center;
 
-    .FooterTitle {
-        margin-left: 4px;
-    }
-    .LinksSocial {
-        margin-right: 5px;
-    }
     .FacebookFooter {
         height: 1cm;
         width: 1cm;
@@ -114,7 +132,6 @@ footer {
         width: 1cm;
 }
 }
-
 .FacebookFooter:hover {
     background-color: #7CB518;
 }
@@ -124,11 +141,37 @@ footer {
 
 
 
+@media screen and (max-width: 720px) {
 
+    nav {
+        font-size: 8px;
+        display: flex;
+        justify-content: end;
+        color: white;
+        align-items: center;
+        border-bottom: solid 2px black ;
+        display: flex;
+        justify-content: end;
+        background-color: #EB6424;
+        button {
+            font-size: 10px;
+            border-radius: 0.3cm;
+            height: 0.5cm;
+            width: 1.2cm;
+            align-items: center;
+            background-color: #7CB518;
+        }
+        button:hover {
+            background-color: #fff4e9;
+        } 
 
-
-
+       .pumpkin img {
+        width: 45px;}
+ 
+    }
     
+    .MainContent {
+    font-size: 15px;
+}
 
-
-
+}
